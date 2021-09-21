@@ -1,7 +1,7 @@
 # pokedex-ts
 A minimalistic web-app to visualize data provided by [POKEAPI](http://pokeapi.co).
 Developed with VueJs, Typescript, Vuetify, Vue Router, Jest. 
-
+[VISIT APP](https://oberpete.github.io/pokedex-ts/)
 ## Limitations
 ### General
 Even though I was a collector of pokemon cards when I was a child, I only have faint memories of it. That is, I could not entirely empathize with what a real pokemon fan expects from a pokedex application. In real life, I would depend on input from a pokemon enthusiast to improve my application.
