@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app id="inspire">
+    <v-system-bar app color="teal darken-3" class="white--text">
+      <v-spacer></v-spacer>
+      <span class="overline pr-1 font-weight-bold">POKEDEX</span>
+      <span class="caption"> by Peter Oberhauser </span>
+    </v-system-bar>
+
+    <PokemonDetailsDrawer />
+
+    <v-main><PokemonList /> </v-main>
+
+    <v-footer app color="transparent" height="72" inset> </v-footer>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script lang="ts">
+import { Vue, Component } from "vue-property-decorator";
+import PokemonList from "@/components/PokemonList.vue";
+import PokemonDetailsDrawer from "@/components/PokemonDetailsDrawer.vue";
+@Component({
+  components: {
+    PokemonList,
+    PokemonDetailsDrawer,
+  },
+})
+export default class App extends Vue {}
+</script>
