@@ -10,7 +10,7 @@ import PokemonCard from "@/components/PokemonDetailsDrawer.vue";
 import { VueConstructor } from "vue";
 
 describe("PokemonDetailsDrawer.spec.ts", () => {
-  let localVue: VueConstructor<PokemonCard>;
+  let localVue: VueConstructor<Vue>;
   let vuetify;
   let router;
   let cmp: Wrapper<PokemonCard, Element>;
